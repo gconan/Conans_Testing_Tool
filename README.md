@@ -1,6 +1,6 @@
 # Conans_Testing_Tool, Exterminator
 
-This side project is inspired by the Software Testing (EE 360T) class I completed at The University of Texas at Austin. I really enjoyed the class and a lot of the material interested me. Mutation testing in particular interested me, and it sounded like a challenge to automate the process.
+This side project is inspired by the Software Testing (EE 360T) class I completed at The University of Texas at Austin. I really enjoyed the class and a lot of the material interested me. Mutation testing in particular interested me, and it sounded like a challenge to automate the process. Another goal for this project is to utilize [Test-driven development (TDD)](https://www.google.com/webhp?sourceid=chrome-instant&ion=1&espv=2&ie=UTF-8#q=test%20driven%20development)
 
 Exterminator is aimed at java projects. The logger can be used with any java file, but is not recommended for test files. The mutation testing is to be used with JUnit test suites. I plan to write a script wich runs exterminator, recompiles code, and runs with exterminator code to produce the desired output.
 
