@@ -31,9 +31,7 @@ public class Loginator_Tester {
 
 	@Before
 	public void setUp() throws Exception {
-		logger = new Loginator();
-		logger.setFileName(fileName);
-		file  = new File(fileName);
+		logger = new Loginator(fileName);
 	}
 
 	@After
@@ -44,6 +42,7 @@ public class Loginator_Tester {
 	public void testSimpleLog() {
 		String s = "this is working!";
 		logger.log(s);
+		logger.close();
 		assertTrue(fileContains(s));
 	}
 	
@@ -57,7 +56,7 @@ public class Loginator_Tester {
 	public boolean fileContains(String s){
 		Scanner reader = null;
 		try {
-			reader = new Scanner(file);
+			reader = new Scanner(new File(fileName));
 		} catch (FileNotFoundException e) {
 			return false;
 		}
@@ -65,9 +64,11 @@ public class Loginator_Tester {
 		boolean exists = false;
 		
 		while(reader.hasNextLine()){
+			
 			exists |= reader.nextLine().equals(s);
-			reader.close();
+			
 		}
+		reader.close();
 		return exists;
 	}
 
