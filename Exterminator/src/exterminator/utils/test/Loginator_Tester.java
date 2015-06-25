@@ -46,6 +46,11 @@ public class Loginator_Tester {
 		assertTrue(fileContains(s));
 	}
 	
+	@Test
+	public void testBasicLogging(){
+		
+	}
+	
 	
 	
 	
