@@ -14,9 +14,9 @@ Exterminator is aimed at java projects. The logger can be used with any java fil
 
 * ###Logging###
 (preprocess a java file, allow for different degrees of logging, and add the logging code to a new java file)
- * part one of the testing tool is to log with lines of code are executed
+ * part one of the testing tool is to create logs by automatically inserting lines of code
  * this logging can translate to [graph] coverage information for the user (such as node coverage, edge coverage, path coverage...)
- * logging can also assist with narrowing down errors by utilizing the information about a variable values or object state
+ * logging can also assist with narrowing down errors by utilizing the information about a variable value or object state
 
 
 * ###Mutation Testing###
